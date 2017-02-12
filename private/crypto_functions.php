@@ -5,12 +5,38 @@
 // Cipher method to use for symmetric encryption
 const CIPHER_METHOD = 'AES-256-CBC';
 
+//string openssl_encrypt ( string $data , string $method , string $password [, int $options = 0 [, string $iv = "" [, string &$tag = NULL [, string $aad = "" [, int $tag_length = 16 ]]]]] )
 function key_encrypt($string, $key, $cipher_method=CIPHER_METHOD) {
-  return "D4RK SH4D0W RUL3Z";
+  
+  $key = str_pad($key, 32, '*');
+  // Create an initialization vector which randomizes the
+  // initial settings of the algorithm, making it harder to decrypt.
+  // Start by finding the correct size of an initialization vector 
+  // for this cipher method.
+  $iv_length = openssl_cipher_iv_length($cipher_method);
+  $iv = openssl_random_pseudo_bytes($iv_length);
+  
+  $encrypted = openssl_encrypt($string, $cipher_method, $key, OPENSSL_RAW_DATA, $iv);
+  $message = $iv . $encrypted;
+  
+  return base64_encode($message);
 }
 
 function key_decrypt($string, $key, $cipher_method=CIPHER_METHOD) {
-  return "PWNED YOU!";
+  $key = str_pad($key, 32, '*');
+  // Base64 decode before decrypting
+  $iv_with_ciphertext = base64_decode($string);
+  
+  // Separate initialization vector and encrypted string
+  $iv_length = openssl_cipher_iv_length($cipher_method);
+  $iv = substr($iv_with_ciphertext, 0, $iv_length);
+  $ciphertext = substr($iv_with_ciphertext, $iv_length);
+
+  
+  // Decrypt
+  $plaintext = openssl_decrypt($ciphertext, CIPHER_METHOD, $key, OPENSSL_RAW_DATA, $iv);
+  
+  return $plaintext;
 }
 
 
