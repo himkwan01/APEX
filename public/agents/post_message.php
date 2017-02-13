@@ -11,7 +11,11 @@
     // I'm sorry, did you need this code? ;)
     // Guess you'll just have to re-write it.
     // With love, Dark Shadow
-    
+    $sender = login();
+    $agent_result = find_agent_by_id($_GET['id']);
+    $agent = db_fetch_assoc($agent_result);
+    $encrypted_text = pkey_encrypt($_POST['plain_text'],$agent['public_key']);
+    $signature = create_signature($encrypted_text, $sender['private_key']);
     $message = [
       'sender_id' => $sender['id'],
       'recipient_id' => $agent['id'],

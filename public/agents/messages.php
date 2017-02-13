@@ -31,6 +31,7 @@
     
     <?php if($current_user['id'] == $agent['id']) { ?>
       <p>Your messages are automatically decrypted using your private key.</p>
+      
     <?php } ?>
     
     <table>
@@ -46,10 +47,12 @@
         <?php
           $created_at = strtotime($message['created_at']);
           
-          // Oooops.
-          // My finger accidentally hit the delete-key.
-          // Sorry, APEX!!!
-          
+          $sender = db_fetch_assoc(find_agent_by_id($message['sender_id']));
+          $validity_text = (verify_signature($message['cipher_text'], $message['signature'], 
+                            $sender['public_key']))?'Valid':'Not Valid';
+          $message_text = ($current_user['id'] == $agent['id'])?
+                          pkey_decrypt($message['cipher_text'],$current_user['private_key']):
+                          $message['cipher_text'];
         ?>
         <tr>
           <td><?php echo h(strftime('%b %d, %Y at %H:%M', $created_at)); ?></td>

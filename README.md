@@ -1,6 +1,6 @@
 # Project 5 - Encryption
 
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
@@ -11,30 +11,35 @@ The following **required** functionality is completed:
 
 2\. Encrypted Message 1
   * [x]  Required: Decrypt the government message
-         Message: I heard about your current situation. Do you know who hacked APEX? -- The Chairman
-  * [ ]  Required: Encrypt a response and include in this README
+  * [x]  Required: Encrypt a response and include in this README
+          Response: vgp6BZyFJdfX/CzrdMEXTkdH5bshlS7WAYXzkT/MMnO5n1bf6FGsU1C+GxqYrmfT
 
 3\. Generate Public-Private Keys
   * [x]  Required: Repair the key generator code
   * [x]  Required: Generate keys for "johnsteed" and add him to the Agent Directory
 
 4\. Asymmetric Encrypt/Decrypt
-  * [ ]  Required: Repair the asymmetric encrypt and decrypt code
+  * [x]  Required: Repair the asymmetric encrypt and decrypt code
 
 5\. Create/Verify Signature
-  * [ ]  Required: Repair the create and verify signature code
+  * [x]  Required: Repair the create and verify signature code
   
 6\. Encrypted Message 2
-  * [ ]  Required: Decrypt the message
-  * [ ]  Required: Verify the message
-  * [ ]  Required: Include a response message in this README
+  * [x]  Required: Decrypt the message
+  * [x]  Required: Verify the message
+  * [x]  Required: Include a response message in this README
+         Message:
+5Fm8Q6ZFxC68QYPr80zgHUXU6T4uGFAmVQtGQOIy1Xk19lx0RW2phL0MSdUAshBvNC3gK/jkMcUNCT73iL676SB7tgIS/2nyijYEOvlcdK4YWfIMHAyxrA3jLnZgmsk5nuSI/Y9tADEZvWyzEwvh1KYVgk/trZqCXxxditrNOqFaGVjsew5e+hMbFo1UYuNaC8XIKYZ8cqd6XcpltsK+cOubkI8NS93a43pom9Sa69+Jlk7x4uZ8pp2LI5aunhOTDeoERqtPq+SDCJ7ZFASw5IDKzR5u/1qz8pX5UYHOGU900wJ6RauMnnn0fc1Q+pzc3To+omBqg7epmQETw89UZw==
+
+Signature:
+bekC/rGOpb14SrDHUtqAX8AgdudGMI+Hw8TxTMx4i8/2/pS2eWNIi1lvAPoVyYc5DWtVJcoUbxelABHmRofVUEodkeGwdtJJLhD7AE3M/xQ8C7X8ZwcX77tUgzalovMZ4SWR6rOqXnZELfOFY5BtSOlPPiWUsdt0NY3XrAqbJE5zVX/x/d+ZlvI1GwqxJAKuBMdgvaHrpnH1TQ3WBtnZ9xirwF8Rv55h/NcV4scgkrJ0Xgij8dLnKIxwo3E4C+nX8MbPyDRLLyWV1wHdMMNnC/xsdMBCxuFfV4YwOnWU9laaCalmkFuODO1N+40tDBNzEtApKfUPx/3CjsbD7aYP+w==
 
 7\. Agent Messages
-  * [ ]  Required: Repair the dropbox code
-  * [ ]  Required: Repair the messages area
-  * [ ]  Required: Display encrypted messages for all agents
-  * [ ]  Required: Messages indicate whether the message signature is valid
-  * [ ]  Required: Your messages are automatically decrypted
+  * [x]  Required: Repair the dropbox code
+  * [x]  Required: Repair the messages area
+  * [x]  Required: Display encrypted messages for all agents
+  * [x]  Required: Messages indicate whether the message signature is valid
+  * [x]  Required: Your messages are automatically decrypted
 
 8\. Identify the Double Agent
   * [ ]  Required: Decrypt as many email messages as possible
