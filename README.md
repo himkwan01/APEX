@@ -12,7 +12,7 @@ The following **required** functionality is completed:
 2\. Encrypted Message 1
   * [x]  Required: Decrypt the government message
   * [x]  Required: Encrypt a response and include in this README
-          Response: vgp6BZyFJdfX/CzrdMEXTkdH5bshlS7WAYXzkT/MMnO5n1bf6FGsU1C+GxqYrmfT
+          Response: Jub9OpgrYAlk4enO3DeXNVyPpSuUaa8wpzuWZM3Y8bo=
 
 3\. Generate Public-Private Keys
   * [x]  Required: Repair the key generator code
