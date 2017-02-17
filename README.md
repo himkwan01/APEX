@@ -42,13 +42,13 @@ bekC/rGOpb14SrDHUtqAX8AgdudGMI+Hw8TxTMx4i8/2/pS2eWNIi1lvAPoVyYc5DWtVJcoUbxelABHm
   * [x]  Required: Your messages are automatically decrypted
 
 8\. Identify the Double Agent
-  * [x]  Required: Decrypt as many email messages as possible
-         Email 1: The SQL injection we discussed is in place. Just search for an agent.
-         Email 2:
-         Email 3: Today I was able to sneak several XSS vulnerabilities onto one of the encrypt/decrypt pages.
-         Email 4:
-         Email 5: Let me know before you go inside. I'll create a distraction. - Austin
-         Email 6: Let me know before you go inside. I'll create a distraction. - Natasha
+  * [x]  Required: Decrypt as many email messages as possible</br>
+         Email 1: The SQL injection we discussed is in place. Just search for an agent.</br>
+         Email 2:</br>
+         Email 3: Today I was able to sneak several XSS vulnerabilities onto one of the encrypt/decrypt pages.</br>
+         Email 4:</br>
+         Email 5: Let me know before you go inside. I'll create a distraction. - Austin</br>
+         Email 6: Let me know before you go inside. I'll create a distraction. - Natasha</br>
   * [x]  Required: Identify the double agent: Natasha
          Email 5 signature is not valid, while email 6 signature is valid.
 
