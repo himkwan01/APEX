@@ -36,7 +36,7 @@ function key_decrypt($string, $key, $cipher_method=CIPHER_METHOD) {
   $ciphertext = substr($iv_with_ciphertext, $iv_length);
 
   // Decrypt
-  $plaintext = openssl_decrypt($ciphertext, CIPHER_METHOD, $key, OPENSSL_RAW_DATA, $iv);
+  $plaintext = openssl_decrypt($ciphertext, $cipher_method, $key, OPENSSL_RAW_DATA, $iv);
   
   return $plaintext;
 }
