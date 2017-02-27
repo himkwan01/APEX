@@ -30,6 +30,15 @@ The following **required** functionality is completed:
   * [x]  Required: Include a response message in this README
          Message:
 5Fm8Q6ZFxC68QYPr80zgHUXU6T4uGFAmVQtGQOIy1Xk19lx0RW2phL0MSdUAshBvNC3gK/jkMcUNCT73iL676SB7tgIS/2nyijYEOvlcdK4YWfIMHAyxrA3jLnZgmsk5nuSI/Y9tADEZvWyzEwvh1KYVgk/trZqCXxxditrNOqFaGVjsew5e+hMbFo1UYuNaC8XIKYZ8cqd6XcpltsK+cOubkI8NS93a43pom9Sa69+Jlk7x4uZ8pp2LI5aunhOTDeoERqtPq+SDCJ7ZFASw5IDKzR5u/1qz8pX5UYHOGU900wJ6RauMnnn0fc1Q+pzc3To+omBqg7epmQETw89UZw==
+public key: -----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsSZojOToNqxPZ8UKPCaH
+QTRQ/n2+jm8pFbe9M9zVttQG7xRxWFdyu9/ittfpn44CG6kDrxpynWxx/oHV3GtV
+2hbsh2cPxLuyJNlVf2TA9Sf5ZCpJ5S79AqtvChU8lytcyDZCJ0SoOq5B44g9frBQ
+8fFeAR3eerja8e6SnS75oW7dahzF/lHOOfsGjzIvp3etJuYco3D11MOG02flAjK0
+WQvEe/EdmxUNNOmio3wQoCEevDURxS4InMD7VIuHUdK80IC6C7Cnsbx4BXM6/JYR
+dZWb5bp7DfONTy/B0glOaeNCDv2vnaL1OAifbKeehF9g/v75THfNal/k7XaJ/B5H
+GwIDAQAB
+-----END PUBLIC KEY-----
 
 Signature:
 bekC/rGOpb14SrDHUtqAX8AgdudGMI+Hw8TxTMx4i8/2/pS2eWNIi1lvAPoVyYc5DWtVJcoUbxelABHmRofVUEodkeGwdtJJLhD7AE3M/xQ8C7X8ZwcX77tUgzalovMZ4SWR6rOqXnZELfOFY5BtSOlPPiWUsdt0NY3XrAqbJE5zVX/x/d+ZlvI1GwqxJAKuBMdgvaHrpnH1TQ3WBtnZ9xirwF8Rv55h/NcV4scgkrJ0Xgij8dLnKIxwo3E4C+nX8MbPyDRLLyWV1wHdMMNnC/xsdMBCxuFfV4YwOnWU9laaCalmkFuODO1N+40tDBNzEtApKfUPx/3CjsbD7aYP+w==
