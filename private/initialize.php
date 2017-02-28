@@ -37,7 +37,13 @@ require_once('validation_functions.php');
 require_once('crypto_functions.php');
 
 $db = db_connect();
-$cipher_method = array('AES-256-CBC','AES-192-CBC','AES-128-CBC', 'DES_EDE3', 'BF');
+$cipher_methods = [
+  'AES-256-CBC' => 32,
+  'AES-192-CBC' => 24,
+  'AES-128-CBC' => 16,
+  'DES-EDE3' => 24,
+  'BF' => 56
+];
 // Always make a current user available
 $current_user = login();
 

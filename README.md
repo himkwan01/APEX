@@ -75,7 +75,7 @@ The following objectives are **optional**:
   * [ ]  Add a "Create/Verify Checksum" section to the Encryption Tools area.
 
 * Advanced Objective 1\.
-  * [ ]  Add support for other symmetric algorithms.
+  * [x]  Add support for other symmetric algorithms.
 
 ## Video Walkthrough
 

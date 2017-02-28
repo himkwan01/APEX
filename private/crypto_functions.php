@@ -7,8 +7,8 @@ const CIPHER_METHOD = 'AES-256-CBC';
 
 //string openssl_encrypt ( string $data , string $method , string $password [, int $options = 0 [, string $iv = "" [, string &$tag = NULL [, string $aad = "" [, int $tag_length = 16 ]]]]] )
 function key_encrypt($string, $key, $cipher_method=CIPHER_METHOD) {
-  
-  $key_length = filter_var($cipher_method, FILTER_SANITIZE_NUMBER_INT)/16;
+  global $cipher_methods;
+  $key_length = $cipher_methods[$cipher_method];
   $key = str_pad($key, $key_length, '*');
   
   // Create an initialization vector which randomizes the
@@ -25,8 +25,8 @@ function key_encrypt($string, $key, $cipher_method=CIPHER_METHOD) {
 }
 
 function key_decrypt($string, $key, $cipher_method=CIPHER_METHOD) {
-  
-  $key_length = filter_var($cipher_method, FILTER_SANITIZE_NUMBER_INT)/16;
+  global $cipher_methods;
+  $key_length = $cipher_methods[$cipher_method];
   $key = str_pad($key, $key_length, '*');
   
   // Base64 decode before decrypting

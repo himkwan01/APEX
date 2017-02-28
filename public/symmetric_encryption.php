@@ -9,7 +9,7 @@
   $decrypted_text = '';
   $encode_algorithm = 'AES-256-CBC';
   $decode_algorithm = 'AES-256-CBC';
-  global $cipher_method;
+  global $cipher_methods;
   if(isset($_POST['submit'])) {
   
     if(isset($_POST['encode_key'])) {
@@ -60,10 +60,10 @@
           <label for="encode_algorithm">Algorithm</label>
           <select name="encode_algorithm">
             <?php 
-            foreach($cipher_method as $value) {
-              echo '<option value="' . $value . '"';
-              if($encode_algorithm === $value) {echo 'selected';}
-              echo '>' . $value . '</option>';
+            foreach(array_keys($cipher_methods) as $key) {
+              echo '<option value="' . $key . '"';
+              if($encode_algorithm === $key) {echo 'selected';}
+              echo '>' . $key . '</option>';
             } 
             ?>
           </select>
@@ -95,10 +95,10 @@
           <label for="decode_algorithm">Algorithm</label>
           <select name="decode_algorithm">
             <?php 
-            foreach($cipher_method as $value) {
-              echo '<option value="' . $value . '"';
-              if($decode_algorithm === $value) {echo 'selected';}
-              echo '>' . $value . '</option>';
+            foreach(array_keys($cipher_methods) as $key) {
+              echo '<option value="' . $key . '"';
+              if($decode_algorithm === $key) {echo 'selected';}
+              echo '>' . $key . '</option>';
             } 
             ?>
           </select>
