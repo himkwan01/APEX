@@ -8,7 +8,8 @@ const CIPHER_METHOD = 'AES-256-CBC';
 //string openssl_encrypt ( string $data , string $method , string $password [, int $options = 0 [, string $iv = "" [, string &$tag = NULL [, string $aad = "" [, int $tag_length = 16 ]]]]] )
 function key_encrypt($string, $key, $cipher_method=CIPHER_METHOD) {
   
-  $key = str_pad($key, 32, '*');
+  $key_length = filter_var($cipher_method, FILTER_SANITIZE_NUMBER_INT)/16;
+  $key = str_pad($key, $key_length, '*');
   
   // Create an initialization vector which randomizes the
   // initial settings of the algorithm, making it harder to decrypt.
@@ -25,7 +26,8 @@ function key_encrypt($string, $key, $cipher_method=CIPHER_METHOD) {
 
 function key_decrypt($string, $key, $cipher_method=CIPHER_METHOD) {
   
-  $key = str_pad($key, 32, '*');
+  $key_length = filter_var($cipher_method, FILTER_SANITIZE_NUMBER_INT)/16;
+  $key = str_pad($key, $key_length, '*');
   
   // Base64 decode before decrypting
   $iv_with_ciphertext = base64_decode($string);
@@ -98,6 +100,16 @@ function verify_signature($data, $signature, $public_key) {
   
   $raw_signature = base64_decode($signature);
   return openssl_verify($data, $raw_signature, $public_key);
+}
+
+// One-way hash algorithm: Checksum
+function create_checksum($string) {
+  return md5($string);
+}
+
+// verify checksum
+function verify_checksum($string, $checksum){
+  return (md5($string)===$checksum);
 }
 
 ?>
