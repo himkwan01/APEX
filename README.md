@@ -89,9 +89,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-To: apex_hq
-From: agent_99
-Subject: Bugs Report
+To: apex_hq</br>
+From: agent_99</br>
+Subject: Bugs Report</br>
 Body:
 
 iqMOa+14PTuQRozi/NCQp+J08O1w6/17Hi36SryDiyQvkguhE06QkAS4JTTJ9iyLAToFfnLtXRVAa7yGHvsA1dYdyoMKHXAbGbd/DZV48cM9pchla4Ylv97NlmLJCgxUkk0ZCZks28wnktGStigSYgumcHkME9FaqQ5hUqgiqMtz6wtLTIxl+FY+t6dxnwYc+v+tuXz3xQCFR+6I18rbnbo0D2V2NH/Mwj5hojya0Qp4kYFQVa4fjbzSDIm3yn73nga0WUMyA3YLQZSc0XY4luctQdMpjFlEusTpL9nLSMtID/wr0J/nyE9hVI7No9H+RFsPR4m6KGpD+JWRHVMEBn/4NqVbZj03tffV7geyHMfZraEc1y/Pp1tmefi1rGnvaobWfLiGVEeDnIPiaHj8KgOgaUx6tyXHXsx2Njck3QUKlZ/+IFX7S9BhPR3YtP9gmnwVEj8bD50Pjsf7yNFKyw== 
