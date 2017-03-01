@@ -1,3 +1,6 @@
+Asymmetric Encryption
+The report is encrypted in symmetric encryption with AES-256-CBC, and the key is agent99_bug_exploration_to_headquarter
+Symmetric Encryption
 I found that in the query_function.php - function find_user_by_id, the variable id did not use db_escape to sanitize which may be vulnerabled for sql injection. Moreover, in symmetric_encryption.php all dynamic output are not sanitized with htmlspecialcharacter as well. It may make the website vulnerable for XSS attack.
 
 symmetric key: agent99_bug_exploration_to_headquarter
