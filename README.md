@@ -64,7 +64,7 @@ bekC/rGOpb14SrDHUtqAX8AgdudGMI+Hw8TxTMx4i8/2/pS2eWNIi1lvAPoVyYc5DWtVJcoUbxelABHm
 The following objectives are **optional**:
 
 * Bonus Objective 1\.
-  * [ ]  Track down the bugs in the code and fix them.
+  * [x]  Track down the bugs in the code and fix them.
 
 * Bonus Objective 2\.
   * [ ]  Write a report of your discoveries (longer than 300 characters).
